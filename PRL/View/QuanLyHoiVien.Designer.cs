@@ -88,10 +88,11 @@
             tabControl1.Anchor = AnchorStyles.None;
             tabControl1.Controls.Add(tbThongTin);
             tabControl1.Controls.Add(tbHopDong);
-            tabControl1.Location = new Point(1, 3);
+            tabControl1.Location = new Point(1, 4);
+            tabControl1.Margin = new Padding(3, 4, 3, 4);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(929, 492);
+            tabControl1.Size = new Size(1062, 656);
             tabControl1.TabIndex = 1;
             // 
             // tbThongTin
@@ -119,10 +120,11 @@
             tbThongTin.Controls.Add(label3);
             tbThongTin.Controls.Add(label2);
             tbThongTin.Controls.Add(label1);
-            tbThongTin.Location = new Point(4, 24);
+            tbThongTin.Location = new Point(4, 29);
+            tbThongTin.Margin = new Padding(3, 4, 3, 4);
             tbThongTin.Name = "tbThongTin";
-            tbThongTin.Padding = new Padding(3);
-            tbThongTin.Size = new Size(921, 464);
+            tbThongTin.Padding = new Padding(3, 4, 3, 4);
+            tbThongTin.Size = new Size(1054, 623);
             tbThongTin.TabIndex = 0;
             tbThongTin.Text = "Thông tin";
             tbThongTin.UseVisualStyleBackColor = true;
@@ -131,9 +133,10 @@
             // 
             button4.Image = (Image)resources.GetObject("button4.Image");
             button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(713, 166);
+            button4.Location = new Point(815, 221);
+            button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
-            button4.Size = new Size(75, 34);
+            button4.Size = new Size(86, 45);
             button4.TabIndex = 22;
             button4.Text = "Update";
             button4.TextAlign = ContentAlignment.MiddleRight;
@@ -143,9 +146,10 @@
             // 
             button3.Image = (Image)resources.GetObject("button3.Image");
             button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(632, 166);
+            button3.Location = new Point(722, 221);
+            button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
-            button3.Size = new Size(75, 34);
+            button3.Size = new Size(86, 45);
             button3.TabIndex = 21;
             button3.Text = "Delete";
             button3.TextAlign = ContentAlignment.MiddleRight;
@@ -155,9 +159,10 @@
             // 
             button2.Image = (Image)resources.GetObject("button2.Image");
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(561, 166);
+            button2.Location = new Point(641, 221);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(63, 34);
+            button2.Size = new Size(72, 45);
             button2.TabIndex = 20;
             button2.Text = "Add";
             button2.TextAlign = ContentAlignment.MiddleRight;
@@ -165,28 +170,31 @@
             // 
             // button1
             // 
-            button1.Location = new Point(489, 173);
+            button1.Location = new Point(559, 231);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(71, 23);
+            button1.Size = new Size(81, 31);
             button1.TabIndex = 19;
             button1.Text = "Tìm kiếm";
             button1.UseVisualStyleBackColor = true;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(20, 173);
+            textBox6.Location = new Point(23, 231);
+            textBox6.Margin = new Padding(3, 4, 3, 4);
             textBox6.Name = "textBox6";
             textBox6.PlaceholderText = "Tìm kiếm hội viên";
-            textBox6.Size = new Size(463, 23);
+            textBox6.Size = new Size(529, 27);
             textBox6.TabIndex = 18;
             // 
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(803, 25);
+            pictureBox1.Location = new Point(918, 33);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(112, 135);
+            pictureBox1.Size = new Size(128, 180);
             pictureBox1.TabIndex = 17;
             pictureBox1.TabStop = false;
             // 
@@ -194,9 +202,10 @@
             // 
             comboBox2.FormattingEnabled = true;
             comboBox2.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
-            comboBox2.Location = new Point(489, 137);
+            comboBox2.Location = new Point(559, 183);
+            comboBox2.Margin = new Padding(3, 4, 3, 4);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(299, 23);
+            comboBox2.Size = new Size(341, 28);
             comboBox2.TabIndex = 16;
             comboBox2.Text = "Chọn ca tập";
             // 
@@ -204,139 +213,148 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Nam", "Nữ" });
-            comboBox1.Location = new Point(95, 137);
+            comboBox1.Location = new Point(109, 183);
+            comboBox1.Margin = new Padding(3, 4, 3, 4);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(281, 23);
+            comboBox1.Size = new Size(321, 28);
             comboBox1.TabIndex = 15;
             comboBox1.Text = "Chọn giới tính";
             // 
             // dateTimePicker1
             // 
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.Location = new Point(95, 99);
+            dateTimePicker1.Location = new Point(109, 132);
+            dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(281, 23);
+            dateTimePicker1.Size = new Size(321, 27);
             dateTimePicker1.TabIndex = 14;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(95, 62);
+            textBox5.Location = new Point(109, 83);
+            textBox5.Margin = new Padding(3, 4, 3, 4);
             textBox5.Name = "textBox5";
             textBox5.PlaceholderText = "Nhập tên hội viên";
-            textBox5.Size = new Size(281, 23);
+            textBox5.Size = new Size(321, 27);
             textBox5.TabIndex = 13;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(489, 25);
+            textBox4.Location = new Point(559, 33);
+            textBox4.Margin = new Padding(3, 4, 3, 4);
             textBox4.Name = "textBox4";
             textBox4.PlaceholderText = "Nhập số điện thoại";
-            textBox4.Size = new Size(299, 23);
+            textBox4.Size = new Size(341, 27);
             textBox4.TabIndex = 12;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(489, 62);
+            textBox3.Location = new Point(559, 83);
+            textBox3.Margin = new Padding(3, 4, 3, 4);
             textBox3.Name = "textBox3";
             textBox3.PlaceholderText = "Nhập Email";
-            textBox3.Size = new Size(299, 23);
+            textBox3.Size = new Size(341, 27);
             textBox3.TabIndex = 11;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(489, 99);
+            textBox2.Location = new Point(559, 132);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = "Nhập tên PT";
-            textBox2.Size = new Size(299, 23);
+            textBox2.Size = new Size(341, 27);
             textBox2.TabIndex = 10;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(95, 25);
+            textBox1.Location = new Point(109, 33);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Nhập mã hội viên ";
-            textBox1.Size = new Size(281, 23);
+            textBox1.Size = new Size(321, 27);
             textBox1.TabIndex = 9;
             // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(0, 207);
+            dataGridView1.Location = new Point(0, 276);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(921, 251);
+            dataGridView1.Size = new Size(1053, 347);
             dataGridView1.TabIndex = 8;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(407, 145);
+            label8.Location = new Point(465, 193);
             label8.Name = "label8";
-            label8.Size = new Size(41, 15);
+            label8.Size = new Size(52, 20);
             label8.TabIndex = 7;
             label8.Text = "Ca tập";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(407, 106);
+            label7.Location = new Point(465, 141);
             label7.Name = "label7";
-            label7.Size = new Size(20, 15);
+            label7.Size = new Size(25, 20);
             label7.TabIndex = 6;
             label7.Text = "PT";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(407, 67);
+            label6.Location = new Point(465, 89);
             label6.Name = "label6";
-            label6.Size = new Size(36, 15);
+            label6.Size = new Size(46, 20);
             label6.TabIndex = 5;
             label6.Text = "Email";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(407, 28);
+            label5.Location = new Point(465, 37);
             label5.Name = "label5";
-            label5.Size = new Size(76, 15);
+            label5.Size = new Size(97, 20);
             label5.TabIndex = 4;
             label5.Text = "Số điện thoại";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(20, 145);
+            label4.Location = new Point(23, 193);
             label4.Name = "label4";
-            label4.Size = new Size(52, 15);
+            label4.Size = new Size(65, 20);
             label4.TabIndex = 3;
             label4.Text = "Giới tính";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(20, 106);
+            label3.Location = new Point(23, 141);
             label3.Name = "label3";
-            label3.Size = new Size(60, 15);
+            label3.Size = new Size(74, 20);
             label3.TabIndex = 2;
             label3.Text = "Ngày sinh";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(20, 67);
+            label2.Location = new Point(23, 89);
             label2.Name = "label2";
-            label2.Size = new Size(70, 15);
+            label2.Size = new Size(88, 20);
             label2.TabIndex = 1;
             label2.Text = "Tên hội viên";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(20, 28);
+            label1.Location = new Point(23, 37);
             label1.Name = "label1";
-            label1.Size = new Size(69, 15);
+            label1.Size = new Size(86, 20);
             label1.TabIndex = 0;
             label1.Text = "Mã hội viên";
             // 
@@ -362,10 +380,11 @@
             tbHopDong.Controls.Add(label11);
             tbHopDong.Controls.Add(label10);
             tbHopDong.Controls.Add(label9);
-            tbHopDong.Location = new Point(4, 24);
+            tbHopDong.Location = new Point(4, 29);
+            tbHopDong.Margin = new Padding(3, 4, 3, 4);
             tbHopDong.Name = "tbHopDong";
-            tbHopDong.Padding = new Padding(3);
-            tbHopDong.Size = new Size(921, 464);
+            tbHopDong.Padding = new Padding(3, 4, 3, 4);
+            tbHopDong.Size = new Size(1054, 623);
             tbHopDong.TabIndex = 1;
             tbHopDong.Text = "Hợp đồng";
             tbHopDong.UseVisualStyleBackColor = true;
@@ -374,9 +393,10 @@
             // 
             button5.Image = (Image)resources.GetObject("button5.Image");
             button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(802, 96);
+            button5.Location = new Point(917, 128);
+            button5.Margin = new Padding(3, 4, 3, 4);
             button5.Name = "button5";
-            button5.Size = new Size(75, 34);
+            button5.Size = new Size(86, 45);
             button5.TabIndex = 27;
             button5.Text = "Update";
             button5.TextAlign = ContentAlignment.MiddleRight;
@@ -386,9 +406,10 @@
             // 
             button6.Image = (Image)resources.GetObject("button6.Image");
             button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(802, 55);
+            button6.Location = new Point(917, 73);
+            button6.Margin = new Padding(3, 4, 3, 4);
             button6.Name = "button6";
-            button6.Size = new Size(75, 34);
+            button6.Size = new Size(86, 45);
             button6.TabIndex = 26;
             button6.Text = "Delete";
             button6.TextAlign = ContentAlignment.MiddleRight;
@@ -398,9 +419,10 @@
             // 
             button7.Image = (Image)resources.GetObject("button7.Image");
             button7.ImageAlign = ContentAlignment.MiddleLeft;
-            button7.Location = new Point(802, 14);
+            button7.Location = new Point(917, 19);
+            button7.Margin = new Padding(3, 4, 3, 4);
             button7.Name = "button7";
-            button7.Size = new Size(75, 34);
+            button7.Size = new Size(86, 45);
             button7.TabIndex = 25;
             button7.Text = "Add";
             button7.TextAlign = ContentAlignment.MiddleRight;
@@ -408,150 +430,162 @@
             // 
             // button8
             // 
-            button8.Location = new Point(802, 137);
+            button8.Location = new Point(917, 183);
+            button8.Margin = new Padding(3, 4, 3, 4);
             button8.Name = "button8";
-            button8.Size = new Size(75, 23);
+            button8.Size = new Size(86, 31);
             button8.TabIndex = 24;
             button8.Text = "Tìm kiếm";
             button8.UseVisualStyleBackColor = true;
             // 
             // textBox12
             // 
-            textBox12.Location = new Point(10, 138);
+            textBox12.Location = new Point(11, 184);
+            textBox12.Margin = new Padding(3, 4, 3, 4);
             textBox12.Name = "textBox12";
             textBox12.PlaceholderText = "Tìm kiếm hợp đồng";
-            textBox12.Size = new Size(759, 23);
+            textBox12.Size = new Size(867, 27);
             textBox12.TabIndex = 23;
             // 
             // dataGridView2
             // 
             dataGridView2.BackgroundColor = SystemColors.ControlLightLight;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(0, 171);
+            dataGridView2.Location = new Point(0, 228);
+            dataGridView2.Margin = new Padding(3, 4, 3, 4);
             dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 51;
             dataGridView2.RowTemplate.Height = 25;
-            dataGridView2.Size = new Size(921, 290);
+            dataGridView2.Size = new Size(1053, 387);
             dataGridView2.TabIndex = 14;
             // 
             // dateTimePicker3
             // 
-            dateTimePicker3.Location = new Point(92, 100);
+            dateTimePicker3.Location = new Point(105, 133);
+            dateTimePicker3.Margin = new Padding(3, 4, 3, 4);
             dateTimePicker3.Name = "dateTimePicker3";
-            dateTimePicker3.Size = new Size(285, 23);
+            dateTimePicker3.Size = new Size(325, 27);
             dateTimePicker3.TabIndex = 13;
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(92, 68);
+            dateTimePicker2.Location = new Point(105, 91);
+            dateTimePicker2.Margin = new Padding(3, 4, 3, 4);
             dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(284, 23);
+            dateTimePicker2.Size = new Size(324, 27);
             dateTimePicker2.TabIndex = 12;
             // 
             // textBox11
             // 
-            textBox11.Location = new Point(485, 74);
+            textBox11.Location = new Point(554, 99);
+            textBox11.Margin = new Padding(3, 4, 3, 4);
             textBox11.Name = "textBox11";
-            textBox11.Size = new Size(284, 23);
+            textBox11.Size = new Size(324, 27);
             textBox11.TabIndex = 11;
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(485, 40);
+            textBox10.Location = new Point(554, 53);
+            textBox10.Margin = new Padding(3, 4, 3, 4);
             textBox10.Name = "textBox10";
-            textBox10.Size = new Size(284, 23);
+            textBox10.Size = new Size(324, 27);
             textBox10.TabIndex = 10;
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(485, 6);
+            textBox9.Location = new Point(554, 8);
+            textBox9.Margin = new Padding(3, 4, 3, 4);
             textBox9.Name = "textBox9";
-            textBox9.Size = new Size(284, 23);
+            textBox9.Size = new Size(324, 27);
             textBox9.TabIndex = 9;
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(92, 36);
+            textBox8.Location = new Point(105, 48);
+            textBox8.Margin = new Padding(3, 4, 3, 4);
             textBox8.Name = "textBox8";
-            textBox8.Size = new Size(284, 23);
+            textBox8.Size = new Size(324, 27);
             textBox8.TabIndex = 8;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(92, 6);
+            textBox7.Location = new Point(105, 8);
+            textBox7.Margin = new Padding(3, 4, 3, 4);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(284, 23);
+            textBox7.Size = new Size(324, 27);
             textBox7.TabIndex = 7;
             // 
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(393, 82);
+            label15.Location = new Point(449, 109);
             label15.Name = "label15";
-            label15.Size = new Size(44, 15);
+            label15.Size = new Size(55, 20);
             label15.TabIndex = 6;
             label15.Text = "Còn lại";
             // 
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(393, 48);
+            label14.Location = new Point(449, 64);
             label14.Name = "label14";
-            label14.Size = new Size(67, 15);
+            label14.Size = new Size(85, 20);
             label14.TabIndex = 5;
             label14.Text = "Đóng trước";
             // 
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(393, 14);
+            label13.Location = new Point(449, 19);
             label13.Name = "label13";
-            label13.Size = new Size(86, 15);
+            label13.Size = new Size(107, 20);
             label13.TabIndex = 4;
             label13.Text = "Dịch vụ đi kèm";
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(7, 106);
+            label12.Location = new Point(8, 141);
             label12.Name = "label12";
-            label12.Size = new Size(78, 15);
+            label12.Size = new Size(97, 20);
             label12.TabIndex = 3;
             label12.Text = "Ngày hết hạn";
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(7, 75);
+            label11.Location = new Point(8, 100);
             label11.Name = "label11";
-            label11.Size = new Size(77, 15);
+            label11.Size = new Size(97, 20);
             label11.TabIndex = 2;
             label11.Text = "Ngày đăng kí";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(7, 44);
+            label10.Location = new Point(8, 59);
             label10.Name = "label10";
-            label10.Size = new Size(70, 15);
+            label10.Size = new Size(88, 20);
             label10.TabIndex = 1;
             label10.Text = "Tên hội viên";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(7, 14);
+            label9.Location = new Point(8, 19);
             label9.Name = "label9";
-            label9.Size = new Size(79, 15);
+            label9.Size = new Size(99, 20);
             label9.TabIndex = 0;
             label9.Text = "Mã hợp đồng";
             // 
             // QuanLyHoiVien
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(933, 497);
+            ClientSize = new Size(1066, 663);
             Controls.Add(tabControl1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "QuanLyHoiVien";
             Text = "QuanLyHoiVien";
             tabControl1.ResumeLayout(false);

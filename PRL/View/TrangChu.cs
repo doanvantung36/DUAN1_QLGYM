@@ -52,6 +52,7 @@ namespace PRL.View
         {
             OpentChillForm(new DatLich());
             txtChucNang.Text = btnDatLich.Text;
+            
         }
 
         private void btnThietBi_Click(object sender, EventArgs e)

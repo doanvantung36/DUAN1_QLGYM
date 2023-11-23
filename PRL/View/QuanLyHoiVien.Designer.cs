@@ -31,20 +31,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyHoiVien));
             tabControl1 = new TabControl();
             tbThongTin = new TabPage();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
-            textBox6 = new TextBox();
+            btnUpdate = new Button();
+            btnDelete = new Button();
+            btn_Add = new Button();
+            btnTimKiem = new Button();
+            txtTimKiem = new TextBox();
             pictureBox1 = new PictureBox();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
-            dateTimePicker1 = new DateTimePicker();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            cb_CaTap = new ComboBox();
+            cb_GioiTinh = new ComboBox();
+            date_NgaySinh = new DateTimePicker();
+            tb_TenHoiVien = new TextBox();
+            tb_SoDienThoai = new TextBox();
+            tb_Email = new TextBox();
+            tb_PT = new TextBox();
+            tb_MaHoiVien = new TextBox();
             dataGridView1 = new DataGridView();
             label8 = new Label();
             label7 = new Label();
@@ -55,19 +55,19 @@
             label2 = new Label();
             label1 = new Label();
             tbHopDong = new TabPage();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            textBox12 = new TextBox();
+            btn_Update_HopDong = new Button();
+            btn_Delete_HopDong = new Button();
+            btn_Add_HopDong = new Button();
+            btn_TimKiem_HOpDong = new Button();
+            txt_TimKiem_HopDong = new TextBox();
             dataGridView2 = new DataGridView();
-            dateTimePicker3 = new DateTimePicker();
-            dateTimePicker2 = new DateTimePicker();
-            textBox11 = new TextBox();
-            textBox10 = new TextBox();
-            textBox9 = new TextBox();
-            textBox8 = new TextBox();
-            textBox7 = new TextBox();
+            date_NgayHetHan = new DateTimePicker();
+            date_NgayDangKi = new DateTimePicker();
+            txt_conLai = new TextBox();
+            txt_DongTruoc = new TextBox();
+            txt_DichVu = new TextBox();
+            txt_TenHoiVien = new TextBox();
+            txt_MaHopDong = new TextBox();
             label15 = new Label();
             label14 = new Label();
             label13 = new Label();
@@ -97,20 +97,20 @@
             // 
             // tbThongTin
             // 
-            tbThongTin.Controls.Add(button4);
-            tbThongTin.Controls.Add(button3);
-            tbThongTin.Controls.Add(button2);
-            tbThongTin.Controls.Add(button1);
-            tbThongTin.Controls.Add(textBox6);
+            tbThongTin.Controls.Add(btnUpdate);
+            tbThongTin.Controls.Add(btnDelete);
+            tbThongTin.Controls.Add(btn_Add);
+            tbThongTin.Controls.Add(btnTimKiem);
+            tbThongTin.Controls.Add(txtTimKiem);
             tbThongTin.Controls.Add(pictureBox1);
-            tbThongTin.Controls.Add(comboBox2);
-            tbThongTin.Controls.Add(comboBox1);
-            tbThongTin.Controls.Add(dateTimePicker1);
-            tbThongTin.Controls.Add(textBox5);
-            tbThongTin.Controls.Add(textBox4);
-            tbThongTin.Controls.Add(textBox3);
-            tbThongTin.Controls.Add(textBox2);
-            tbThongTin.Controls.Add(textBox1);
+            tbThongTin.Controls.Add(cb_CaTap);
+            tbThongTin.Controls.Add(cb_GioiTinh);
+            tbThongTin.Controls.Add(date_NgaySinh);
+            tbThongTin.Controls.Add(tb_TenHoiVien);
+            tbThongTin.Controls.Add(tb_SoDienThoai);
+            tbThongTin.Controls.Add(tb_Email);
+            tbThongTin.Controls.Add(tb_PT);
+            tbThongTin.Controls.Add(tb_MaHoiVien);
             tbThongTin.Controls.Add(dataGridView1);
             tbThongTin.Controls.Add(label8);
             tbThongTin.Controls.Add(label7);
@@ -129,63 +129,63 @@
             tbThongTin.Text = "Thông tin";
             tbThongTin.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnUpdate
             // 
-            button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(815, 221);
-            button4.Margin = new Padding(3, 4, 3, 4);
-            button4.Name = "button4";
-            button4.Size = new Size(86, 45);
-            button4.TabIndex = 22;
-            button4.Text = "Update";
-            button4.TextAlign = ContentAlignment.MiddleRight;
-            button4.UseVisualStyleBackColor = true;
+            btnUpdate.Image = (Image)resources.GetObject("btnUpdate.Image");
+            btnUpdate.ImageAlign = ContentAlignment.MiddleLeft;
+            btnUpdate.Location = new Point(815, 221);
+            btnUpdate.Margin = new Padding(3, 4, 3, 4);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(86, 45);
+            btnUpdate.TabIndex = 22;
+            btnUpdate.Text = "Update";
+            btnUpdate.TextAlign = ContentAlignment.MiddleRight;
+            btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnDelete
             // 
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(722, 221);
-            button3.Margin = new Padding(3, 4, 3, 4);
-            button3.Name = "button3";
-            button3.Size = new Size(86, 45);
-            button3.TabIndex = 21;
-            button3.Text = "Delete";
-            button3.TextAlign = ContentAlignment.MiddleRight;
-            button3.UseVisualStyleBackColor = true;
+            btnDelete.Image = (Image)resources.GetObject("btnDelete.Image");
+            btnDelete.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDelete.Location = new Point(722, 221);
+            btnDelete.Margin = new Padding(3, 4, 3, 4);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(86, 45);
+            btnDelete.TabIndex = 21;
+            btnDelete.Text = "Delete";
+            btnDelete.TextAlign = ContentAlignment.MiddleRight;
+            btnDelete.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_Add
             // 
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(641, 221);
-            button2.Margin = new Padding(3, 4, 3, 4);
-            button2.Name = "button2";
-            button2.Size = new Size(72, 45);
-            button2.TabIndex = 20;
-            button2.Text = "Add";
-            button2.TextAlign = ContentAlignment.MiddleRight;
-            button2.UseVisualStyleBackColor = true;
+            btn_Add.Image = (Image)resources.GetObject("btn_Add.Image");
+            btn_Add.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_Add.Location = new Point(641, 221);
+            btn_Add.Margin = new Padding(3, 4, 3, 4);
+            btn_Add.Name = "btn_Add";
+            btn_Add.Size = new Size(72, 45);
+            btn_Add.TabIndex = 20;
+            btn_Add.Text = "Add";
+            btn_Add.TextAlign = ContentAlignment.MiddleRight;
+            btn_Add.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnTimKiem
             // 
-            button1.Location = new Point(559, 231);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(81, 31);
-            button1.TabIndex = 19;
-            button1.Text = "Tìm kiếm";
-            button1.UseVisualStyleBackColor = true;
+            btnTimKiem.Location = new Point(559, 231);
+            btnTimKiem.Margin = new Padding(3, 4, 3, 4);
+            btnTimKiem.Name = "btnTimKiem";
+            btnTimKiem.Size = new Size(81, 31);
+            btnTimKiem.TabIndex = 19;
+            btnTimKiem.Text = "Tìm kiếm";
+            btnTimKiem.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // txtTimKiem
             // 
-            textBox6.Location = new Point(23, 231);
-            textBox6.Margin = new Padding(3, 4, 3, 4);
-            textBox6.Name = "textBox6";
-            textBox6.PlaceholderText = "Tìm kiếm hội viên";
-            textBox6.Size = new Size(529, 27);
-            textBox6.TabIndex = 18;
+            txtTimKiem.Location = new Point(23, 231);
+            txtTimKiem.Margin = new Padding(3, 4, 3, 4);
+            txtTimKiem.Name = "txtTimKiem";
+            txtTimKiem.PlaceholderText = "Tìm kiếm hội viên";
+            txtTimKiem.Size = new Size(529, 27);
+            txtTimKiem.TabIndex = 18;
             // 
             // pictureBox1
             // 
@@ -198,81 +198,81 @@
             pictureBox1.TabIndex = 17;
             pictureBox1.TabStop = false;
             // 
-            // comboBox2
+            // cb_CaTap
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
-            comboBox2.Location = new Point(559, 183);
-            comboBox2.Margin = new Padding(3, 4, 3, 4);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(341, 28);
-            comboBox2.TabIndex = 16;
-            comboBox2.Text = "Chọn ca tập";
+            cb_CaTap.FormattingEnabled = true;
+            cb_CaTap.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
+            cb_CaTap.Location = new Point(559, 183);
+            cb_CaTap.Margin = new Padding(3, 4, 3, 4);
+            cb_CaTap.Name = "cb_CaTap";
+            cb_CaTap.Size = new Size(341, 28);
+            cb_CaTap.TabIndex = 16;
+            cb_CaTap.Text = "Chọn ca tập";
             // 
-            // comboBox1
+            // cb_GioiTinh
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Nam", "Nữ" });
-            comboBox1.Location = new Point(109, 183);
-            comboBox1.Margin = new Padding(3, 4, 3, 4);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(321, 28);
-            comboBox1.TabIndex = 15;
-            comboBox1.Text = "Chọn giới tính";
+            cb_GioiTinh.FormattingEnabled = true;
+            cb_GioiTinh.Items.AddRange(new object[] { "Nam", "Nữ" });
+            cb_GioiTinh.Location = new Point(109, 183);
+            cb_GioiTinh.Margin = new Padding(3, 4, 3, 4);
+            cb_GioiTinh.Name = "cb_GioiTinh";
+            cb_GioiTinh.Size = new Size(321, 28);
+            cb_GioiTinh.TabIndex = 15;
+            cb_GioiTinh.Text = "Chọn giới tính";
             // 
-            // dateTimePicker1
+            // date_NgaySinh
             // 
-            dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.Location = new Point(109, 132);
-            dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(321, 27);
-            dateTimePicker1.TabIndex = 14;
+            date_NgaySinh.Format = DateTimePickerFormat.Custom;
+            date_NgaySinh.Location = new Point(109, 132);
+            date_NgaySinh.Margin = new Padding(3, 4, 3, 4);
+            date_NgaySinh.Name = "date_NgaySinh";
+            date_NgaySinh.Size = new Size(321, 27);
+            date_NgaySinh.TabIndex = 14;
             // 
-            // textBox5
+            // tb_TenHoiVien
             // 
-            textBox5.Location = new Point(109, 83);
-            textBox5.Margin = new Padding(3, 4, 3, 4);
-            textBox5.Name = "textBox5";
-            textBox5.PlaceholderText = "Nhập tên hội viên";
-            textBox5.Size = new Size(321, 27);
-            textBox5.TabIndex = 13;
+            tb_TenHoiVien.Location = new Point(109, 83);
+            tb_TenHoiVien.Margin = new Padding(3, 4, 3, 4);
+            tb_TenHoiVien.Name = "tb_TenHoiVien";
+            tb_TenHoiVien.PlaceholderText = "Nhập tên hội viên";
+            tb_TenHoiVien.Size = new Size(321, 27);
+            tb_TenHoiVien.TabIndex = 13;
             // 
-            // textBox4
+            // tb_SoDienThoai
             // 
-            textBox4.Location = new Point(559, 33);
-            textBox4.Margin = new Padding(3, 4, 3, 4);
-            textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "Nhập số điện thoại";
-            textBox4.Size = new Size(341, 27);
-            textBox4.TabIndex = 12;
+            tb_SoDienThoai.Location = new Point(559, 33);
+            tb_SoDienThoai.Margin = new Padding(3, 4, 3, 4);
+            tb_SoDienThoai.Name = "tb_SoDienThoai";
+            tb_SoDienThoai.PlaceholderText = "Nhập số điện thoại";
+            tb_SoDienThoai.Size = new Size(341, 27);
+            tb_SoDienThoai.TabIndex = 12;
             // 
-            // textBox3
+            // tb_Email
             // 
-            textBox3.Location = new Point(559, 83);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "Nhập Email";
-            textBox3.Size = new Size(341, 27);
-            textBox3.TabIndex = 11;
+            tb_Email.Location = new Point(559, 83);
+            tb_Email.Margin = new Padding(3, 4, 3, 4);
+            tb_Email.Name = "tb_Email";
+            tb_Email.PlaceholderText = "Nhập Email";
+            tb_Email.Size = new Size(341, 27);
+            tb_Email.TabIndex = 11;
             // 
-            // textBox2
+            // tb_PT
             // 
-            textBox2.Location = new Point(559, 132);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Nhập tên PT";
-            textBox2.Size = new Size(341, 27);
-            textBox2.TabIndex = 10;
+            tb_PT.Location = new Point(559, 132);
+            tb_PT.Margin = new Padding(3, 4, 3, 4);
+            tb_PT.Name = "tb_PT";
+            tb_PT.PlaceholderText = "Nhập tên PT";
+            tb_PT.Size = new Size(341, 27);
+            tb_PT.TabIndex = 10;
             // 
-            // textBox1
+            // tb_MaHoiVien
             // 
-            textBox1.Location = new Point(109, 33);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Nhập mã hội viên ";
-            textBox1.Size = new Size(321, 27);
-            textBox1.TabIndex = 9;
+            tb_MaHoiVien.Location = new Point(109, 33);
+            tb_MaHoiVien.Margin = new Padding(3, 4, 3, 4);
+            tb_MaHoiVien.Name = "tb_MaHoiVien";
+            tb_MaHoiVien.PlaceholderText = "Nhập mã hội viên ";
+            tb_MaHoiVien.Size = new Size(321, 27);
+            tb_MaHoiVien.TabIndex = 9;
             // 
             // dataGridView1
             // 
@@ -360,19 +360,19 @@
             // 
             // tbHopDong
             // 
-            tbHopDong.Controls.Add(button5);
-            tbHopDong.Controls.Add(button6);
-            tbHopDong.Controls.Add(button7);
-            tbHopDong.Controls.Add(button8);
-            tbHopDong.Controls.Add(textBox12);
+            tbHopDong.Controls.Add(btn_Update_HopDong);
+            tbHopDong.Controls.Add(btn_Delete_HopDong);
+            tbHopDong.Controls.Add(btn_Add_HopDong);
+            tbHopDong.Controls.Add(btn_TimKiem_HOpDong);
+            tbHopDong.Controls.Add(txt_TimKiem_HopDong);
             tbHopDong.Controls.Add(dataGridView2);
-            tbHopDong.Controls.Add(dateTimePicker3);
-            tbHopDong.Controls.Add(dateTimePicker2);
-            tbHopDong.Controls.Add(textBox11);
-            tbHopDong.Controls.Add(textBox10);
-            tbHopDong.Controls.Add(textBox9);
-            tbHopDong.Controls.Add(textBox8);
-            tbHopDong.Controls.Add(textBox7);
+            tbHopDong.Controls.Add(date_NgayHetHan);
+            tbHopDong.Controls.Add(date_NgayDangKi);
+            tbHopDong.Controls.Add(txt_conLai);
+            tbHopDong.Controls.Add(txt_DongTruoc);
+            tbHopDong.Controls.Add(txt_DichVu);
+            tbHopDong.Controls.Add(txt_TenHoiVien);
+            tbHopDong.Controls.Add(txt_MaHopDong);
             tbHopDong.Controls.Add(label15);
             tbHopDong.Controls.Add(label14);
             tbHopDong.Controls.Add(label13);
@@ -389,63 +389,63 @@
             tbHopDong.Text = "Hợp đồng";
             tbHopDong.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btn_Update_HopDong
             // 
-            button5.Image = (Image)resources.GetObject("button5.Image");
-            button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(917, 128);
-            button5.Margin = new Padding(3, 4, 3, 4);
-            button5.Name = "button5";
-            button5.Size = new Size(86, 45);
-            button5.TabIndex = 27;
-            button5.Text = "Update";
-            button5.TextAlign = ContentAlignment.MiddleRight;
-            button5.UseVisualStyleBackColor = true;
+            btn_Update_HopDong.Image = (Image)resources.GetObject("btn_Update_HopDong.Image");
+            btn_Update_HopDong.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_Update_HopDong.Location = new Point(917, 128);
+            btn_Update_HopDong.Margin = new Padding(3, 4, 3, 4);
+            btn_Update_HopDong.Name = "btn_Update_HopDong";
+            btn_Update_HopDong.Size = new Size(86, 45);
+            btn_Update_HopDong.TabIndex = 27;
+            btn_Update_HopDong.Text = "Update";
+            btn_Update_HopDong.TextAlign = ContentAlignment.MiddleRight;
+            btn_Update_HopDong.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btn_Delete_HopDong
             // 
-            button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(917, 73);
-            button6.Margin = new Padding(3, 4, 3, 4);
-            button6.Name = "button6";
-            button6.Size = new Size(86, 45);
-            button6.TabIndex = 26;
-            button6.Text = "Delete";
-            button6.TextAlign = ContentAlignment.MiddleRight;
-            button6.UseVisualStyleBackColor = true;
+            btn_Delete_HopDong.Image = (Image)resources.GetObject("btn_Delete_HopDong.Image");
+            btn_Delete_HopDong.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_Delete_HopDong.Location = new Point(917, 73);
+            btn_Delete_HopDong.Margin = new Padding(3, 4, 3, 4);
+            btn_Delete_HopDong.Name = "btn_Delete_HopDong";
+            btn_Delete_HopDong.Size = new Size(86, 45);
+            btn_Delete_HopDong.TabIndex = 26;
+            btn_Delete_HopDong.Text = "Delete";
+            btn_Delete_HopDong.TextAlign = ContentAlignment.MiddleRight;
+            btn_Delete_HopDong.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btn_Add_HopDong
             // 
-            button7.Image = (Image)resources.GetObject("button7.Image");
-            button7.ImageAlign = ContentAlignment.MiddleLeft;
-            button7.Location = new Point(917, 19);
-            button7.Margin = new Padding(3, 4, 3, 4);
-            button7.Name = "button7";
-            button7.Size = new Size(86, 45);
-            button7.TabIndex = 25;
-            button7.Text = "Add";
-            button7.TextAlign = ContentAlignment.MiddleRight;
-            button7.UseVisualStyleBackColor = true;
+            btn_Add_HopDong.Image = (Image)resources.GetObject("btn_Add_HopDong.Image");
+            btn_Add_HopDong.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_Add_HopDong.Location = new Point(917, 19);
+            btn_Add_HopDong.Margin = new Padding(3, 4, 3, 4);
+            btn_Add_HopDong.Name = "btn_Add_HopDong";
+            btn_Add_HopDong.Size = new Size(86, 45);
+            btn_Add_HopDong.TabIndex = 25;
+            btn_Add_HopDong.Text = "Add";
+            btn_Add_HopDong.TextAlign = ContentAlignment.MiddleRight;
+            btn_Add_HopDong.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btn_TimKiem_HOpDong
             // 
-            button8.Location = new Point(917, 183);
-            button8.Margin = new Padding(3, 4, 3, 4);
-            button8.Name = "button8";
-            button8.Size = new Size(86, 31);
-            button8.TabIndex = 24;
-            button8.Text = "Tìm kiếm";
-            button8.UseVisualStyleBackColor = true;
+            btn_TimKiem_HOpDong.Location = new Point(917, 183);
+            btn_TimKiem_HOpDong.Margin = new Padding(3, 4, 3, 4);
+            btn_TimKiem_HOpDong.Name = "btn_TimKiem_HOpDong";
+            btn_TimKiem_HOpDong.Size = new Size(86, 31);
+            btn_TimKiem_HOpDong.TabIndex = 24;
+            btn_TimKiem_HOpDong.Text = "Tìm kiếm";
+            btn_TimKiem_HOpDong.UseVisualStyleBackColor = true;
             // 
-            // textBox12
+            // txt_TimKiem_HopDong
             // 
-            textBox12.Location = new Point(11, 184);
-            textBox12.Margin = new Padding(3, 4, 3, 4);
-            textBox12.Name = "textBox12";
-            textBox12.PlaceholderText = "Tìm kiếm hợp đồng";
-            textBox12.Size = new Size(867, 27);
-            textBox12.TabIndex = 23;
+            txt_TimKiem_HopDong.Location = new Point(11, 184);
+            txt_TimKiem_HopDong.Margin = new Padding(3, 4, 3, 4);
+            txt_TimKiem_HopDong.Name = "txt_TimKiem_HopDong";
+            txt_TimKiem_HopDong.PlaceholderText = "Tìm kiếm hợp đồng";
+            txt_TimKiem_HopDong.Size = new Size(867, 27);
+            txt_TimKiem_HopDong.TabIndex = 23;
             // 
             // dataGridView2
             // 
@@ -459,61 +459,61 @@
             dataGridView2.Size = new Size(1053, 387);
             dataGridView2.TabIndex = 14;
             // 
-            // dateTimePicker3
+            // date_NgayHetHan
             // 
-            dateTimePicker3.Location = new Point(105, 133);
-            dateTimePicker3.Margin = new Padding(3, 4, 3, 4);
-            dateTimePicker3.Name = "dateTimePicker3";
-            dateTimePicker3.Size = new Size(325, 27);
-            dateTimePicker3.TabIndex = 13;
+            date_NgayHetHan.Location = new Point(105, 133);
+            date_NgayHetHan.Margin = new Padding(3, 4, 3, 4);
+            date_NgayHetHan.Name = "date_NgayHetHan";
+            date_NgayHetHan.Size = new Size(325, 27);
+            date_NgayHetHan.TabIndex = 13;
             // 
-            // dateTimePicker2
+            // date_NgayDangKi
             // 
-            dateTimePicker2.Location = new Point(105, 91);
-            dateTimePicker2.Margin = new Padding(3, 4, 3, 4);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(324, 27);
-            dateTimePicker2.TabIndex = 12;
+            date_NgayDangKi.Location = new Point(105, 91);
+            date_NgayDangKi.Margin = new Padding(3, 4, 3, 4);
+            date_NgayDangKi.Name = "date_NgayDangKi";
+            date_NgayDangKi.Size = new Size(324, 27);
+            date_NgayDangKi.TabIndex = 12;
             // 
-            // textBox11
+            // txt_conLai
             // 
-            textBox11.Location = new Point(554, 99);
-            textBox11.Margin = new Padding(3, 4, 3, 4);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(324, 27);
-            textBox11.TabIndex = 11;
+            txt_conLai.Location = new Point(554, 99);
+            txt_conLai.Margin = new Padding(3, 4, 3, 4);
+            txt_conLai.Name = "txt_conLai";
+            txt_conLai.Size = new Size(324, 27);
+            txt_conLai.TabIndex = 11;
             // 
-            // textBox10
+            // txt_DongTruoc
             // 
-            textBox10.Location = new Point(554, 53);
-            textBox10.Margin = new Padding(3, 4, 3, 4);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(324, 27);
-            textBox10.TabIndex = 10;
+            txt_DongTruoc.Location = new Point(554, 53);
+            txt_DongTruoc.Margin = new Padding(3, 4, 3, 4);
+            txt_DongTruoc.Name = "txt_DongTruoc";
+            txt_DongTruoc.Size = new Size(324, 27);
+            txt_DongTruoc.TabIndex = 10;
             // 
-            // textBox9
+            // txt_DichVu
             // 
-            textBox9.Location = new Point(554, 8);
-            textBox9.Margin = new Padding(3, 4, 3, 4);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(324, 27);
-            textBox9.TabIndex = 9;
+            txt_DichVu.Location = new Point(554, 8);
+            txt_DichVu.Margin = new Padding(3, 4, 3, 4);
+            txt_DichVu.Name = "txt_DichVu";
+            txt_DichVu.Size = new Size(324, 27);
+            txt_DichVu.TabIndex = 9;
             // 
-            // textBox8
+            // txt_TenHoiVien
             // 
-            textBox8.Location = new Point(105, 48);
-            textBox8.Margin = new Padding(3, 4, 3, 4);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(324, 27);
-            textBox8.TabIndex = 8;
+            txt_TenHoiVien.Location = new Point(105, 48);
+            txt_TenHoiVien.Margin = new Padding(3, 4, 3, 4);
+            txt_TenHoiVien.Name = "txt_TenHoiVien";
+            txt_TenHoiVien.Size = new Size(324, 27);
+            txt_TenHoiVien.TabIndex = 8;
             // 
-            // textBox7
+            // txt_MaHopDong
             // 
-            textBox7.Location = new Point(105, 8);
-            textBox7.Margin = new Padding(3, 4, 3, 4);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(324, 27);
-            textBox7.TabIndex = 7;
+            txt_MaHopDong.Location = new Point(105, 8);
+            txt_MaHopDong.Margin = new Padding(3, 4, 3, 4);
+            txt_MaHopDong.Name = "txt_MaHopDong";
+            txt_MaHopDong.Size = new Size(324, 27);
+            txt_MaHopDong.TabIndex = 7;
             // 
             // label15
             // 
@@ -604,20 +604,20 @@
         private TabControl tabControl1;
         private TabPage tbThongTin;
         private TabPage tbHopDong;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private TextBox textBox6;
+        private Button btnUpdate;
+        private Button btnDelete;
+        private Button btn_Add;
+        private Button btnTimKiem;
+        private TextBox txtTimKiem;
         private PictureBox pictureBox1;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private ComboBox cb_CaTap;
+        private ComboBox cb_GioiTinh;
+        private DateTimePicker date_NgaySinh;
+        private TextBox tb_TenHoiVien;
+        private TextBox tb_SoDienThoai;
+        private TextBox tb_Email;
+        private TextBox tb_PT;
+        private TextBox tb_MaHoiVien;
         private DataGridView dataGridView1;
         private Label label8;
         private Label label7;
@@ -627,19 +627,19 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private TextBox textBox12;
+        private Button btn_Update_HopDong;
+        private Button btn_Delete_HopDong;
+        private Button btn_Add_HopDong;
+        private Button btn_TimKiem_HOpDong;
+        private TextBox txt_TimKiem_HopDong;
         private DataGridView dataGridView2;
-        private DateTimePicker dateTimePicker3;
-        private DateTimePicker dateTimePicker2;
-        private TextBox textBox11;
-        private TextBox textBox10;
-        private TextBox textBox9;
-        private TextBox textBox8;
-        private TextBox textBox7;
+        private DateTimePicker date_NgayHetHan;
+        private DateTimePicker date_NgayDangKi;
+        private TextBox txt_conLai;
+        private TextBox txt_DongTruoc;
+        private TextBox txt_DichVu;
+        private TextBox txt_TenHoiVien;
+        private TextBox txt_MaHopDong;
         private Label label15;
         private Label label14;
         private Label label13;

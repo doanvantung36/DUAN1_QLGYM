@@ -63,9 +63,8 @@
             panel_Menu.Controls.Add(pictureBox1);
             panel_Menu.Dock = DockStyle.Left;
             panel_Menu.Location = new Point(0, 0);
-            panel_Menu.Margin = new Padding(3, 4, 3, 4);
             panel_Menu.Name = "panel_Menu";
-            panel_Menu.Size = new Size(182, 788);
+            panel_Menu.Size = new Size(159, 591);
             panel_Menu.TabIndex = 0;
             // 
             // btnDangXuat
@@ -74,21 +73,19 @@
             btnDangXuat.AutoSize = true;
             btnDangXuat.BackColor = Color.Red;
             btnDangXuat.ForeColor = SystemColors.ControlLightLight;
-            btnDangXuat.Location = new Point(3, 753);
-            btnDangXuat.Margin = new Padding(3, 4, 3, 4);
+            btnDangXuat.Location = new Point(5, 558);
             btnDangXuat.Name = "btnDangXuat";
-            btnDangXuat.Size = new Size(171, 40);
+            btnDangXuat.Size = new Size(150, 30);
             btnDangXuat.TabIndex = 8;
             btnDangXuat.Text = "Đăng Xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
             // 
             // btnGiaoDich
             // 
-            btnGiaoDich.BackColor = Color.LightBlue;
-            btnGiaoDich.Location = new Point(3, 425);
-            btnGiaoDich.Margin = new Padding(3, 4, 3, 4);
+            btnGiaoDich.BackColor = SystemColors.Control;
+            btnGiaoDich.Location = new Point(3, 319);
             btnGiaoDich.Name = "btnGiaoDich";
-            btnGiaoDich.Size = new Size(171, 31);
+            btnGiaoDich.Size = new Size(150, 23);
             btnGiaoDich.TabIndex = 7;
             btnGiaoDich.Text = "Quản lý giao dịch";
             btnGiaoDich.UseVisualStyleBackColor = false;
@@ -96,11 +93,10 @@
             // 
             // btnKhuyenMai
             // 
-            btnKhuyenMai.BackColor = Color.LightBlue;
-            btnKhuyenMai.Location = new Point(3, 387);
-            btnKhuyenMai.Margin = new Padding(3, 4, 3, 4);
+            btnKhuyenMai.BackColor = SystemColors.Control;
+            btnKhuyenMai.Location = new Point(3, 290);
             btnKhuyenMai.Name = "btnKhuyenMai";
-            btnKhuyenMai.Size = new Size(171, 31);
+            btnKhuyenMai.Size = new Size(150, 23);
             btnKhuyenMai.TabIndex = 6;
             btnKhuyenMai.Text = "Quản lý khuyến mại";
             btnKhuyenMai.UseVisualStyleBackColor = false;
@@ -108,11 +104,10 @@
             // 
             // btnNhanVien
             // 
-            btnNhanVien.BackColor = Color.LightBlue;
-            btnNhanVien.Location = new Point(3, 348);
-            btnNhanVien.Margin = new Padding(3, 4, 3, 4);
+            btnNhanVien.BackColor = SystemColors.Control;
+            btnNhanVien.Location = new Point(3, 261);
             btnNhanVien.Name = "btnNhanVien";
-            btnNhanVien.Size = new Size(171, 31);
+            btnNhanVien.Size = new Size(150, 23);
             btnNhanVien.TabIndex = 5;
             btnNhanVien.Text = "Quản lý nhân viên";
             btnNhanVien.UseVisualStyleBackColor = false;
@@ -120,11 +115,10 @@
             // 
             // btnThietBi
             // 
-            btnThietBi.BackColor = Color.LightBlue;
-            btnThietBi.Location = new Point(3, 309);
-            btnThietBi.Margin = new Padding(3, 4, 3, 4);
+            btnThietBi.BackColor = SystemColors.Control;
+            btnThietBi.Location = new Point(3, 232);
             btnThietBi.Name = "btnThietBi";
-            btnThietBi.Size = new Size(171, 31);
+            btnThietBi.Size = new Size(150, 23);
             btnThietBi.TabIndex = 4;
             btnThietBi.Text = "Quản  lý thiết bị";
             btnThietBi.UseVisualStyleBackColor = false;
@@ -132,11 +126,10 @@
             // 
             // btnDatLich
             // 
-            btnDatLich.BackColor = Color.LightBlue;
-            btnDatLich.Location = new Point(3, 271);
-            btnDatLich.Margin = new Padding(3, 4, 3, 4);
+            btnDatLich.BackColor = SystemColors.Control;
+            btnDatLich.Location = new Point(3, 203);
             btnDatLich.Name = "btnDatLich";
-            btnDatLich.Size = new Size(171, 31);
+            btnDatLich.Size = new Size(150, 23);
             btnDatLich.TabIndex = 3;
             btnDatLich.Text = "Đặt lịch";
             btnDatLich.UseVisualStyleBackColor = false;
@@ -144,11 +137,10 @@
             // 
             // btn_PT
             // 
-            btn_PT.BackColor = Color.LightBlue;
-            btn_PT.Location = new Point(3, 232);
-            btn_PT.Margin = new Padding(3, 4, 3, 4);
+            btn_PT.BackColor = SystemColors.Control;
+            btn_PT.Location = new Point(3, 174);
             btn_PT.Name = "btn_PT";
-            btn_PT.Size = new Size(171, 31);
+            btn_PT.Size = new Size(150, 23);
             btn_PT.TabIndex = 2;
             btn_PT.Text = "PT";
             btn_PT.UseVisualStyleBackColor = false;
@@ -156,11 +148,10 @@
             // 
             // btn_HoiVien
             // 
-            btn_HoiVien.BackColor = Color.LightBlue;
-            btn_HoiVien.Location = new Point(3, 193);
-            btn_HoiVien.Margin = new Padding(3, 4, 3, 4);
+            btn_HoiVien.BackColor = SystemColors.Control;
+            btn_HoiVien.Location = new Point(3, 145);
             btn_HoiVien.Name = "btn_HoiVien";
-            btn_HoiVien.Size = new Size(171, 31);
+            btn_HoiVien.Size = new Size(150, 23);
             btn_HoiVien.TabIndex = 1;
             btn_HoiVien.Text = "Quản lý hội viên";
             btn_HoiVien.UseVisualStyleBackColor = false;
@@ -172,9 +163,8 @@
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Dock = DockStyle.Top;
             pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(182, 185);
+            pictureBox1.Size = new Size(159, 139);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -188,10 +178,9 @@
             PanelControl.Controls.Add(label2);
             PanelControl.Controls.Add(label1);
             PanelControl.Dock = DockStyle.Top;
-            PanelControl.Location = new Point(182, 0);
-            PanelControl.Margin = new Padding(3, 4, 3, 4);
+            PanelControl.Location = new Point(159, 0);
             PanelControl.Name = "PanelControl";
-            PanelControl.Size = new Size(1089, 63);
+            PanelControl.Size = new Size(953, 47);
             PanelControl.TabIndex = 1;
             // 
             // label3
@@ -199,9 +188,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.CornflowerBlue;
-            label3.Location = new Point(363, 12);
+            label3.Location = new Point(318, 9);
             label3.Name = "label3";
-            label3.Size = new Size(296, 41);
+            label3.Size = new Size(234, 32);
             label3.TabIndex = 3;
             label3.Text = "WOLFGYM FITNESS";
             // 
@@ -210,27 +199,27 @@
             txtChucNang.AutoSize = true;
             txtChucNang.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             txtChucNang.ForeColor = Color.Red;
-            txtChucNang.Location = new Point(3, 35);
+            txtChucNang.Location = new Point(3, 26);
             txtChucNang.Name = "txtChucNang";
-            txtChucNang.Size = new Size(112, 28);
+            txtChucNang.Size = new Size(92, 21);
             txtChucNang.TabIndex = 2;
             txtChucNang.Text = "Chức năng";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(882, 41);
+            label2.Location = new Point(772, 31);
             label2.Name = "label2";
-            label2.Size = new Size(42, 20);
+            label2.Size = new Size(33, 15);
             label2.TabIndex = 1;
             label2.Text = "Time";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(882, 12);
+            label1.Location = new Point(772, 9);
             label1.Name = "label1";
-            label1.Size = new Size(113, 20);
+            label1.Size = new Size(90, 15);
             label1.TabIndex = 0;
             label1.Text = "Tên người dùng";
             // 
@@ -240,24 +229,25 @@
             panel_Body.BackgroundImage = (Image)resources.GetObject("panel_Body.BackgroundImage");
             panel_Body.BackgroundImageLayout = ImageLayout.Stretch;
             panel_Body.Dock = DockStyle.Fill;
-            panel_Body.Location = new Point(182, 63);
-            panel_Body.Margin = new Padding(3, 4, 3, 4);
+            panel_Body.Location = new Point(159, 47);
             panel_Body.Name = "panel_Body";
-            panel_Body.Size = new Size(1089, 725);
+            panel_Body.Size = new Size(953, 544);
             panel_Body.TabIndex = 2;
             // 
             // TrangChu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.LightBlue;
-            ClientSize = new Size(1271, 788);
+            ClientSize = new Size(1112, 591);
             Controls.Add(panel_Body);
             Controls.Add(PanelControl);
             Controls.Add(panel_Menu);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "TrangChu";
             StartPosition = FormStartPosition.CenterScreen;
+            Load += TrangChu_Load;
             panel_Menu.ResumeLayout(false);
             panel_Menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

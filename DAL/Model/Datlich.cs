@@ -12,12 +12,10 @@ namespace DAL.Model
     {
         [Key]
         public string IdPhieudatlich {  get; set; }
-
+        [ForeignKey("IdKhachhang")]
         public string IdKhachhang {  get; set; }
 
         public DateTime Ngaydatlich { get; set; }
-        public virtual ICollection<Datlichchitiet> DatLichChiTiet { get; set; }
-
-
+        public KhachHang KhachHang { get; set; }
     }
 }

@@ -28,5 +28,6 @@ namespace DAL.Model
         public string Ghichu {  get; set; }
 
         public Datlich DatLich { get; set; }
+        public PT PT { get; set; }
     }
 }

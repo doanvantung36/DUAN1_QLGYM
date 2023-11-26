@@ -16,7 +16,6 @@ namespace DAL.Model
         public string IdHoadon {  get; set; }
         [ForeignKey("IdKhachhang")]
         public string IdKhachhang {  get; set; }
-
         public double Gia {  get; set; }
         [ForeignKey("IdGG")]
         public string IdGG {  get; set; }

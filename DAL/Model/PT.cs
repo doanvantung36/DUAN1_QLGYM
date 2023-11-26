@@ -19,7 +19,5 @@ namespace DAL.Model
         public string Email { get; set; }
         public string ChucNang { get; set; }
         // Navigation property for the related LoaiThietBi
-        public PT PT { get; set; }
-
     }
 }

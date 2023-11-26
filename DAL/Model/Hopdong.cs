@@ -22,5 +22,8 @@ namespace DAL.Model
         public DateTime Ngaykethuc { get; set; }
         [ForeignKey("IdDichvu")]
         public string IdDichvu {  get; set; }
+
+        public PT PT { get; set; }
+        public Hopdong HopDong { get; set; }
     }
 }

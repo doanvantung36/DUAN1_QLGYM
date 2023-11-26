@@ -29,11 +29,8 @@ namespace DAL.Model
         public int Thanhtien {  get; set; }
 
         public int Tongtienthanhtoan { get; set; }
-        [ForeignKey("IdThanhtoan")]
-        public string IdThanhToan {  get; set; }
         // Navigation property for the related LoaiThietBi
         public KhachHang KhachHang { get; set; }
         public Nhanvien NhanVien { get; set; }
-        public 
     }
 }

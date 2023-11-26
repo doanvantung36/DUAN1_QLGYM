@@ -16,8 +16,7 @@ namespace DAL.Model
         public string IdKhachhang {  get; set; }
 
         public DateTime Ngaydatlich { get; set; }
-        [ForeignKey("IdCT")]
-        public string IdCT {  get; set; }
+        public virtual ICollection<Datlichchitiet> DatLichChiTiet { get; set; }
 
 
     }

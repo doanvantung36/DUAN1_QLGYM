@@ -20,6 +20,9 @@ namespace DAL.Model
         public DateTime Ngaythanhtoan { get; set; }
 
         public string Trangthai {  get; set; }
+        // Navigation property for the related LoaiThietBi
+        public Phuongthucthanhtoan PhuongThucThanhToan { get; set; }
+        public Hoadon HoaDon { get; set; }
 
     }
 }

@@ -28,5 +28,9 @@ namespace DAL.Model
         public double Tiencanthanhtoan { get; set; }
         [ForeignKey("IdDichvu")]
         public string IdDichVu { get; set; }
+        public Dichvu DichVu { get; set; }
+        public KhachHang KhachHang { get; set; }
+        public Giamgia GiamGia { get; set; }
+        public Hoadon HoaDon { get; set; }
     }
 }

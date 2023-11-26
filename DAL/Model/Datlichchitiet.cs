@@ -11,9 +11,9 @@ namespace DAL.Model
     public class Datlichchitiet
     {
         [Key]
-        public string IdCT {  get; set; }
-        [ForeignKey ("IdPhieudatlich")]
-        public string IdPhieudatlich {  get; set; }
+        public string IdCT { get; set; }
+        [ForeignKey("IdPhieuDatLich")]
+        public string IdPhieudatlich { get; set; }
         [ForeignKey ("IdPT")]
         public string IdPT {  get; set; }
 
@@ -26,5 +26,7 @@ namespace DAL.Model
         public DateTime Gioketthuc {  get; set; }
 
         public string Ghichu {  get; set; }
+
+        public Datlich DatLich { get; set; }
     }
 }

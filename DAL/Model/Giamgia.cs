@@ -14,7 +14,7 @@ namespace DAL.Model
 
         public string Mota {  get; set; }
 
-        public float giamgia {  get; set; }
+        public float GiaGiam {  get; set; }
 
         public DateTime Ngayhethan { get; set; }
     }

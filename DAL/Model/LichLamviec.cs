@@ -17,5 +17,7 @@ namespace DAL.Model
         public DateTime Ngay { get; set; }
 
         public string IdPT {  get; set; }
+        // Navigation property for the related LoaiThietBi
+        public PT PT { get; set; }
     }
 }

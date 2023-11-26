@@ -30,5 +30,9 @@ namespace DAL.Model
         public string MaLoaiThietBi { get; set; }
 
         public string NhaCungCap { get; set; }
+        // Navigation property for the related LoaiThietBi
+        public ThietBi ThietBi { get; set; }
+        public PhieuThongKe PhieuThongKe { get; set; }
+
     }
 }

@@ -17,7 +17,7 @@ namespace DAL.Model
         [ForeignKey("IdHoadon")]
         public string IdHoadon { get; set; }
 
-        public DateOnly Ngaythanhtoan { get; set; }
+        public DateTime Ngaythanhtoan { get; set; }
 
         public string Trangthai {  get; set; }
 

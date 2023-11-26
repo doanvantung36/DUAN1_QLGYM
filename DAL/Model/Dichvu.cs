@@ -15,7 +15,7 @@ namespace DAL.Model
         public string Tendichvu { get; set; }
 
         public int Gia {  get; set; }
-        public DateOnly Thoihan { get; set; }
+        public DateTime Thoihan { get; set; }
 
         public string Ghichu {  get; set; }
     }

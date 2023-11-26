@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace DAL.Model
 {
-    public class LichLamvic
+    public class LichLamviec
     {
         [Key]
         public string IdLich {  get; set; }
 
         public string Ca {  get; set; }
 
-        public DateOnly Ngay { get; set; }
+        public DateTime Ngay { get; set; }
 
         public string IdPT {  get; set; }
     }

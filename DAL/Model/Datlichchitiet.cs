@@ -19,11 +19,11 @@ namespace DAL.Model
 
         public string Trangthai { get; set; }
 
-        public DateOnly Ngaydatlich { get; set; }
+        public DateTime Ngaydatlich { get; set; }
 
-        public TimeOnly Gioibatdau { get; set; }
+        public DateTime Gioibatdau { get; set; }
 
-        public TimeOnly Gioketthuc {  get; set; }
+        public DateTime Gioketthuc {  get; set; }
 
         public string Ghichu {  get; set; }
     }

@@ -16,6 +16,6 @@ namespace DAL.Model
 
         public float giamgia {  get; set; }
 
-        public DateOnly Ngayhethan { get; set; }
+        public DateTime Ngayhethan { get; set; }
     }
 }

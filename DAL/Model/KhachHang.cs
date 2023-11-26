@@ -15,7 +15,7 @@ namespace DAL.Model
 
         public string Tenkhachhang {  get; set; }
 
-        public DateOnly Ngaysinh { get; set; }
+        public DateTime Ngaysinh { get; set; }
 
         public string Gioitinh { get; set; }
 

@@ -21,7 +21,7 @@ namespace DAL.Model
 
         public string Trangthaihoadon {  get; set; }
 
-        public DateOnly Ngaylap {  get; set; }
+        public DateTime Ngaylap {  get; set; }
         public int Tongtien {  get; set; }
 
         public float Giamgia {  get; set; }

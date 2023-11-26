@@ -16,37 +16,37 @@ namespace PRL.View
 {
     public partial class DangNhap : Form
     {
-        public DangNhap()
+        private readonly UserService _userService;
+        public DangNhap(UserService userService)
         {
             InitializeComponent();
-            userService = new UserService(userRepository);
+            _userService = userService;
         }
-        private UserRepository userRepository = new UserRepository();
-        private UserService userService;
-        //Sự kiện được sử dụng để thông báo rằng người dùng đã đăng nhập thành công
-        public event Action<User> UserLoggedIn;
 
 
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
+            
+            if (_userService == null)
+            {
+                // Thông báo hoặc xử lý khi _userService chưa được thiết lập
+                MessageBox.Show("UserService chưa được thiết lập");
+                return;
+            }
             string username = txtID.Text;
+            string phone = "";
             string password = txtPassword.Text;
 
-
-            if (userService.AuthenticateUser(username, password))
+            User user = _userService.UserLogin(username, phone, password);
+            if (user != null)
             {
-                // Lấy thông tin người dùng và gửi sự kiện UserLoggedIn
-                var user = userRepository.GetUserByUsername(username);
-                UserLoggedIn?.Invoke(user);
-
-                MessageBox.Show("Login successful!");
-
-                // Đóng form đăng nhập
-                this.Close();
+                TrangChu trangChuForm = new TrangChu(user, _userService);
+                trangChuForm.Show();
+                this.Hide();
             }
             else
             {
-                MessageBox.Show("Login failed. Invalid credentials.");
+                MessageBox.Show("Đăng nhập không thành công");
             }
         }
     }

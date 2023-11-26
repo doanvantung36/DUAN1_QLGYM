@@ -9,7 +9,12 @@ namespace DAL.GymInterface
 {
     public interface IUser
     {
+        public User GetByID (string id);
+        public User GetByPhone (string name);
         User GetUserByUsername(string username);
-        bool ValidateUserCredentials(string username, string password);
+        public void Add(User user);
+        public void Update(User user);
+        public void Delete(string user);
+        IEnumerable<User> GetAll();
     }
 }

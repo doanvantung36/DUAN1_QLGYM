@@ -15,8 +15,6 @@ namespace PRL.View
 {
     public partial class TrangChu : Form
     {
-        private UserRepository userRepository = new UserRepository();
-        private UserService userService;
         private void InitializeControls()
         {
             //// Set the Anchor property for each control
@@ -27,27 +25,14 @@ namespace PRL.View
             //Controls.Add(panel_Body);
             //Controls.Add(txtChucNang);
         }
-        private void HandleUserLoggedIn(User user)
-        {
-            // Kiểm tra và kích hoạt/vô hiệu hóa nút dựa trên vai trò
-            if (user != null && user.Rule.Contains("NhanVien"))
-            {
-                // Nếu là nhân viên, vô hiệu hóa nút
-                btnNhanVien.Enabled = false;
-                btnKhuyenMai.Enabled = false;
-            }
-            else
-            {
-                // Nếu không phải nhân viên, kích hoạt nút
-                btnNhanVien.Enabled = true;
-                btnKhuyenMai.Enabled = true;
-            }
-        }
-        public TrangChu()
+        private readonly User _Logined;
+        private readonly UserService _UserService;
+
+        public TrangChu(User loggedInUser, UserService userService)
         {
             InitializeComponent();
-            InitializeControls();
-            userService = new UserService(userRepository);
+            _Logined = loggedInUser;
+            _UserService = userService;
         }
 
         private Form curentChillForm;
@@ -114,16 +99,31 @@ namespace PRL.View
 
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
-            OpentChillForm(new NhanVien());
-            txtChucNang.Text = btn_HoiVien.Text;
-            SetButtonColor(btnNhanVien);
+            if (_UserService.Rules(_Logined, "NhanVien"))
+            {
+                MessageBox.Show("Bạn không có quyền truy cập vào mục này");
+            }
+            else
+            {
+                OpentChillForm(new NhanVien());
+                txtChucNang.Text = btn_HoiVien.Text;
+                SetButtonColor(btnNhanVien);
+            }  
         }
 
         private void btnKhuyenMai_Click(object sender, EventArgs e)
         {
-            OpentChillForm(new KhuyenMai());
-            txtChucNang.Text = btnKhuyenMai.Text;
-            SetButtonColor(btnKhuyenMai);
+            if (_UserService.Rules(_Logined, "NhanVien"))
+            {
+                MessageBox.Show("Bạn không có quyền truy cập vào mục này");
+            }
+            else
+            {
+                OpentChillForm(new KhuyenMai());
+                txtChucNang.Text = btnKhuyenMai.Text;
+                SetButtonColor(btnKhuyenMai);
+            }
+            
         }
 
         private void btnGiaoDich_Click(object sender, EventArgs e)
@@ -144,12 +144,7 @@ namespace PRL.View
 
         private void TrangChu_Load(object sender, EventArgs e)
         {
-            // Khởi tạo form đăng nhập và đăng ký sự kiện UserLoggedIn
-            DangNhap loginForm = new DangNhap();
-            loginForm.UserLoggedIn += HandleUserLoggedIn;
-
-            // Hiển thị form đăng nhập
-            loginForm.ShowDialog();
+            
         }
     }
 }

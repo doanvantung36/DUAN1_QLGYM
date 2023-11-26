@@ -1,3 +1,6 @@
+using BUS.Services;
+using DAL.DBContexs;
+using DAL.Repositories;
 using PRL.View;
 
 namespace PRL
@@ -10,10 +13,24 @@ namespace PRL
         [STAThread]
         static void Main()
         {
+            
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+
+
+            GymDBContext gymDBContext = new GymDBContext();
+
+
+            UserRepository userRepository = new UserRepository(gymDBContext);
+            UserService userService = new UserService(userRepository, gymDBContext);
+
+            ApplicationConfiguration.Initialize();
+            
+            //---------------------------------------------------------------------------------------
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new TrangChu());
+            
+            Application.Run(new DangNhap(userService));
         }
     }
 }

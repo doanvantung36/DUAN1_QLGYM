@@ -31,32 +31,39 @@ namespace PRL.View
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhap));
             txtPassword = new TextBox();
             txtID = new TextBox();
             label2 = new Label();
-            label3 = new Label();
             btnLogin = new Button();
             btnThoat = new Button();
+            panel1 = new Panel();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtPassword
             // 
             txtPassword.BorderStyle = BorderStyle.None;
-            txtPassword.Location = new Point(257, 104);
+            txtPassword.Location = new Point(398, 174);
             txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Multiline = true;
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(311, 17);
+            txtPassword.PlaceholderText = "Phập Password tại đây ... ";
+            txtPassword.Size = new Size(311, 33);
             txtPassword.TabIndex = 0;
             // 
             // txtID
             // 
             txtID.BorderStyle = BorderStyle.None;
-            txtID.Location = new Point(257, 74);
+            txtID.Location = new Point(398, 123);
             txtID.Margin = new Padding(3, 2, 3, 2);
             txtID.Multiline = true;
             txtID.Name = "txtID";
-            txtID.Size = new Size(311, 17);
+            txtID.PlaceholderText = "Nhập ID Đăng nhập tại đây ...";
+            txtID.Size = new Size(311, 37);
             txtID.TabIndex = 1;
             // 
             // label2
@@ -67,51 +74,71 @@ namespace PRL.View
             label2.Size = new Size(0, 15);
             label2.TabIndex = 3;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(289, 24);
-            label3.Name = "label3";
-            label3.Size = new Size(238, 32);
-            label3.TabIndex = 4;
-            label3.Text = "WOLRGYM FITNESS";
-            // 
             // btnLogin
             // 
-            btnLogin.BackColor = Color.White;
+            btnLogin.BackColor = Color.PaleGreen;
             btnLogin.FlatAppearance.BorderSize = 0;
             btnLogin.FlatStyle = FlatStyle.Flat;
-            btnLogin.Location = new Point(257, 141);
+            btnLogin.Location = new Point(398, 255);
             btnLogin.Margin = new Padding(3, 2, 3, 2);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(145, 32);
+            btnLogin.Size = new Size(311, 32);
             btnLogin.TabIndex = 6;
             btnLogin.Text = "Đăng Nhập";
-            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click_1;
             // 
             // btnThoat
             // 
-            btnLogin.BackColor = Color.White;
+            btnThoat.BackColor = Color.MistyRose;
             btnThoat.FlatAppearance.BorderSize = 0;
             btnThoat.FlatStyle = FlatStyle.Flat;
-            btnThoat.Location = new Point(257, 194);
+            btnThoat.Location = new Point(398, 305);
             btnThoat.Margin = new Padding(3, 2, 3, 2);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(145, 32);
+            btnThoat.Size = new Size(311, 32);
             btnThoat.TabIndex = 7;
             btnThoat.Text = "Thoát";
-            btnThoat.UseVisualStyleBackColor = true;
+            btnThoat.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.PowderBlue;
+            panel1.Controls.Add(pictureBox1);
+            panel1.Location = new Point(1, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(332, 461);
+            panel1.TabIndex = 8;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(31, 114);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(256, 237);
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("MS Reference Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(465, 69);
+            label1.Name = "label1";
+            label1.Size = new Size(168, 29);
+            label1.TabIndex = 9;
+            label1.Text = "ĐĂNG NHẬP";
             // 
             // DangNhap
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(854, 463);
+            ClientSize = new Size(771, 463);
+            Controls.Add(label1);
+            Controls.Add(panel1);
             Controls.Add(btnThoat);
             Controls.Add(btnLogin);
-            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(txtID);
             Controls.Add(txtPassword);
@@ -119,6 +146,8 @@ namespace PRL.View
             Name = "DangNhap";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "DangNhap";
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -128,8 +157,10 @@ namespace PRL.View
         private TextBox txtPassword;
         private TextBox txtID;
         private Label label2;
-        private Label label3;
         private Button btnLogin;
         private Button btnThoat;
+        private Panel panel1;
+        private PictureBox pictureBox1;
+        private Label label1;
     }
 }

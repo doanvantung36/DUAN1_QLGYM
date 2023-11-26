@@ -1,7 +1,10 @@
-﻿namespace PRL.View
+﻿
+namespace PRL.View
 {
+
     partial class DangNhap
     {
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -30,38 +33,31 @@
         {
             txtPassword = new TextBox();
             txtID = new TextBox();
-            label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             btnLogin = new Button();
             btnThoat = new Button();
-            label4 = new Label();
             SuspendLayout();
             // 
             // txtPassword
             // 
+            txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Location = new Point(257, 104);
             txtPassword.Margin = new Padding(3, 2, 3, 2);
+            txtPassword.Multiline = true;
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(311, 23);
+            txtPassword.Size = new Size(311, 17);
             txtPassword.TabIndex = 0;
             // 
             // txtID
             // 
+            txtID.BorderStyle = BorderStyle.None;
             txtID.Location = new Point(257, 74);
             txtID.Margin = new Padding(3, 2, 3, 2);
+            txtID.Multiline = true;
             txtID.Name = "txtID";
-            txtID.Size = new Size(311, 23);
+            txtID.Size = new Size(311, 17);
             txtID.TabIndex = 1;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(153, 79);
-            label1.Name = "label1";
-            label1.Size = new Size(78, 15);
-            label1.TabIndex = 2;
-            label1.Text = "ID đăng nhập";
             // 
             // label2
             // 
@@ -75,7 +71,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(234, 18);
+            label3.Location = new Point(289, 24);
             label3.Name = "label3";
             label3.Size = new Size(238, 32);
             label3.TabIndex = 4;
@@ -83,10 +79,13 @@
             // 
             // btnLogin
             // 
+            btnLogin.BackColor = Color.White;
+            btnLogin.FlatAppearance.BorderSize = 0;
+            btnLogin.FlatStyle = FlatStyle.Flat;
             btnLogin.Location = new Point(257, 141);
             btnLogin.Margin = new Padding(3, 2, 3, 2);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(90, 22);
+            btnLogin.Size = new Size(145, 32);
             btnLogin.TabIndex = 6;
             btnLogin.Text = "Đăng Nhập";
             btnLogin.UseVisualStyleBackColor = true;
@@ -94,34 +93,26 @@
             // 
             // btnThoat
             // 
-            btnThoat.Location = new Point(408, 141);
+            btnLogin.BackColor = Color.White;
+            btnThoat.FlatAppearance.BorderSize = 0;
+            btnThoat.FlatStyle = FlatStyle.Flat;
+            btnThoat.Location = new Point(257, 194);
             btnThoat.Margin = new Padding(3, 2, 3, 2);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(89, 22);
+            btnThoat.Size = new Size(145, 32);
             btnThoat.TabIndex = 7;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(153, 106);
-            label4.Name = "label4";
-            label4.Size = new Size(57, 15);
-            label4.TabIndex = 8;
-            label4.Text = "Password";
             // 
             // DangNhap
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(726, 206);
-            Controls.Add(label4);
+            ClientSize = new Size(854, 463);
             Controls.Add(btnThoat);
             Controls.Add(btnLogin);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(label1);
             Controls.Add(txtID);
             Controls.Add(txtPassword);
             Margin = new Padding(3, 2, 3, 2);
@@ -136,11 +127,9 @@
 
         private TextBox txtPassword;
         private TextBox txtID;
-        private Label label1;
         private Label label2;
         private Label label3;
         private Button btnLogin;
         private Button btnThoat;
-        private Label label4;
     }
 }

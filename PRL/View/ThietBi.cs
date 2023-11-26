@@ -16,5 +16,10 @@ namespace PRL.View
         {
             InitializeComponent();
         }
+
+        private void ThietBi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

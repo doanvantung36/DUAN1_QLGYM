@@ -26,7 +26,7 @@ namespace PRL.View
 
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
-            
+
             if (_userService == null)
             {
                 // Thông báo hoặc xử lý khi _userService chưa được thiết lập

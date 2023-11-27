@@ -51,7 +51,8 @@ namespace PRL.View
             txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Multiline = true;
             txtPassword.Name = "txtPassword";
-            txtPassword.PlaceholderText = "Phập Password tại đây ... ";
+            txtPassword.PasswordChar = '*';
+            txtPassword.PlaceholderText = "Nhập Password tại đây ... ";
             txtPassword.Size = new Size(311, 33);
             txtPassword.TabIndex = 0;
             // 
@@ -134,6 +135,7 @@ namespace PRL.View
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DeepSkyBlue;
             ClientSize = new Size(771, 463);
             Controls.Add(label1);
             Controls.Add(panel1);

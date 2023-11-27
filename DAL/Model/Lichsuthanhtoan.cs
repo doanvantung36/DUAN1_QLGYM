@@ -21,8 +21,8 @@ namespace DAL.Model
 
         public string Trangthai {  get; set; }
         // Navigation property for the related LoaiThietBi
-        public Phuongthucthanhtoan PhuongThucThanhToan { get; set; }
-        public Hoadon HoaDon { get; set; }
+        public Phuongthucthanhtoan Phuongthucthanhtoan { get; set; }
+        public Hoadon Hoadon { get; set; }
 
     }
 }

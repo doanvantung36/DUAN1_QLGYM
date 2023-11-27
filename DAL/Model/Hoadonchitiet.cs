@@ -20,16 +20,16 @@ namespace DAL.Model
         [ForeignKey("IdGG")]
         public string IdGG {  get; set; }
 
-        public float Giamgia { get; set; }
+        public float Giagiam { get; set; }
 
         public double Tiencoctruoc { get; set; }
 
         public double Tiencanthanhtoan { get; set; }
         [ForeignKey("IdDichvu")]
-        public string IdDichVu { get; set; }
-        public Dichvu DichVu { get; set; }
+        public string IdDichvu { get; set; }
+        public Dichvu Dichvu { get; set; }
         public KhachHang KhachHang { get; set; }
-        public Giamgia GiamGia { get; set; }
-        public Hoadon HoaDon { get; set; }
+        public Giamgia Giamgia { get; set; }
+        public Hoadon Hoadon { get; set; }
     }
 }

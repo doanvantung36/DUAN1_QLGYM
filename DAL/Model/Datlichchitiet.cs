@@ -12,11 +12,13 @@ namespace DAL.Model
     {
         [Key]
         public string IdCT { get; set; }
-        [ForeignKey("IdPhieuDatLich")]
+        
         public string IdPhieudatlich { get; set; }
-        [ForeignKey ("IdPT")]
+        [ForeignKey("IdPhieuDatLich")]
+        public Datlich Datlich { get; set; }
         public string IdPT {  get; set; }
-
+        [ForeignKey("IdPT")]
+        public PT PT { get; set; }
         public string Trangthai { get; set; }
 
         public DateTime Ngaydatlich { get; set; }
@@ -27,7 +29,7 @@ namespace DAL.Model
 
         public string Ghichu {  get; set; }
 
-        public Datlich DatLich { get; set; }
-        public PT PT { get; set; }
+        
+        
     }
 }

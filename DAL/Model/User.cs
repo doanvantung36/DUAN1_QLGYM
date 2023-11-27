@@ -13,6 +13,6 @@ namespace DAL.Model
         public string Id { get; set; }
         public string Password { get; set; }
         public string Phone { get; set; }
-        public string Rule { get; set; }
+        public string Roles { get; set; }
     }
 }

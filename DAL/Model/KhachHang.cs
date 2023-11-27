@@ -24,6 +24,6 @@ namespace DAL.Model
         public int SDT {  get; set; }
 
         public string Email {  get; set; }
-
+        
     }
 }

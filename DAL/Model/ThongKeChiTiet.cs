@@ -13,12 +13,13 @@ namespace DAL.Model
         [Key]
         public string MaPhieuCT { get; set; }
 
-        [ForeignKey("MaPhieu")]
+        
         public string MaPhieu { get; set; }
-
-        [ForeignKey("MaThietBi")]
+        [ForeignKey("MaPhieu")]
+        public PhieuThongKe PhieuThongKe { get; set; }
         public string MaThietBi { get; set; }
-
+        [ForeignKey("MaThietBi")]
+        public ThietBi ThietBi { get; set; }
         public string TenThietBi { get; set; }
 
         public string TenLoaiThietBi { get; set; }
@@ -31,8 +32,7 @@ namespace DAL.Model
 
         public string NhaCungCap { get; set; }
         // Navigation property for the related LoaiThietBi
-        public ThietBi ThietBi { get; set; }
-        public PhieuThongKe PhieuThongKe { get; set; }
-
+        
+        
     }
 }

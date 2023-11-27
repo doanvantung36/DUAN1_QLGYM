@@ -11,12 +11,13 @@ namespace DAL.Model
     public class Hoadon
     {
         [Key]
+        public string IdHoadon { get; set; }
         public string IdNhanvien {  get; set; }
-        [ForeignKey("IdHoadon")]
-        public string IdHoadon {  get; set; }
-        [ForeignKey(("IdKhachhang"))]
+        [ForeignKey("IdNhanVien")]
+        public Nhanvien Nhanvien { get; set; }
         public string IdKhachhang {  get; set; }
-
+        [ForeignKey(("IdKhachhang"))]
+        public KhachHang KhachHang { get; set; }
         public string Trangthaithanhtoan {  get; set; }
 
         public string Trangthaihoadon {  get; set; }
@@ -30,7 +31,7 @@ namespace DAL.Model
 
         public int Tongtienthanhtoan { get; set; }
         // Navigation property for the related LoaiThietBi
-        public KhachHang KhachHang { get; set; }
-        public Nhanvien NhanVien { get; set; }
+        
+        
     }
 }

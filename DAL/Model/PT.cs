@@ -18,6 +18,10 @@ namespace DAL.Model
         public string SoDienThoai { get; set; }
         public string Email { get; set; }
         public string ChucNang { get; set; }
-        // Navigation property for the related LoaiThietBi
+        // Navigation property for the related DatLichChiTiet
+        public Datlichchitiet Datlichchitiet { get; set; }
+        public Hopdong Hopdong { get; set; }
+        public LichLamviec LichLamviec { get; set; }
+
     }
 }

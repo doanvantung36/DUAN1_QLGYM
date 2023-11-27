@@ -67,7 +67,7 @@ namespace BUS.Services
 
         public bool Rules(User user, string role)
         {
-            return user != null && user.Rule == role;
+            return user != null && user.Roles == role;
         }
     }
 }

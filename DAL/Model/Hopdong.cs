@@ -11,19 +11,17 @@ namespace DAL.Model
     public class Hopdong
     {
         [Key]
-        public string IdHopdong {  get; set; }
-        [ForeignKey("MaPT")]
-        public string MaPT {  get; set; }
-        [ForeignKey("IdKhachhang")]
-        public string IdKhachhang { get; set; }
-        public KhachHang KhachHang { get; set; }
+        public string IdHopDong { get; set; }
+
+        [ForeignKey("PT")]
+        public string MaPT { get; set; }
+
         public DateTime Ngaydangki { get; set; }
 
         public DateTime Ngaykethuc { get; set; }
-        [ForeignKey("IdDichvu")]
-        public string IdDichvu {  get; set; }
 
-        public  PT PT { get; set; }
-        public  Dichvu Dichvu { get; set; }
+        public PT PT { get; set; }
+
+        public virtual ICollection<KhachHang> Khachhangs { get; set; }
     }
 }

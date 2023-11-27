@@ -19,9 +19,8 @@ namespace DAL.Model
         public string Email { get; set; }
         public string ChucNang { get; set; }
         // Navigation property for the related DatLichChiTiet
-        public Datlichchitiet Datlichchitiet { get; set; }
-        public Hopdong Hopdong { get; set; }
-        public LichLamviec LichLamviec { get; set; }
+        public virtual ICollection<LichLamviec> LichLamviecs { get; set; }
+        public virtual ICollection<Hopdong> Hopdong { get; set; }
 
     }
 }

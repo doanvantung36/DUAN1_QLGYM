@@ -11,12 +11,15 @@ namespace DAL.Model
     public class Datlich
     {
         [Key]
-        public string IdPhieudatlich {  get; set; }
-        
-        public string IdKhachhang {  get; set; }
+        public string IdPhieudatlich { get; set; }
+        public string IdKhachhang { get; set; }
+
         [ForeignKey("IdKhachhang")]
         public KhachHang KhachHang { get; set; }
+
         public DateTime Ngaydatlich { get; set; }
-        
+
+        // Navigation property for the related Datlichchitiet
+        public virtual ICollection<Datlichchitiet> Datlichchitiets { get; set; }
     }
 }

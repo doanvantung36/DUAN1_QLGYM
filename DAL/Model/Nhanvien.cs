@@ -22,7 +22,7 @@ namespace DAL.Model
 
         public string Chucvu {  get; set; }
 
-        public int SDT {  get; set; }
+        public string SDT {  get; set; }
 
         public string Ghichi {  get; set; }
     }

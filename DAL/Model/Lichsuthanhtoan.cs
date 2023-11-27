@@ -12,17 +12,9 @@ namespace DAL.Model
     {
         [Key]
         public string IdThanhtoan {  get; set; }
-        [ForeignKey("IdPhuongThuc")]
-        public string IdPhuonthuc {  get; set; }
-        [ForeignKey("IdHoadon")]
-        public string IdHoadon { get; set; }
-
         public DateTime Ngaythanhtoan { get; set; }
-
         public string Trangthai {  get; set; }
         // Navigation property for the related LoaiThietBi
-        public Phuongthucthanhtoan Phuongthucthanhtoan { get; set; }
-        public Hoadon Hoadon { get; set; }
 
     }
 }

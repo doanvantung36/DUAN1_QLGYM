@@ -24,5 +24,8 @@ namespace DAL.Model
         public string MauSac { get; set; }
 
         public string TrangThai { get; set; }
+
+        // Navigation property for the related ThietBi
+        public virtual ICollection<ThietBi> ThietBis { get; set; }
     }
 }

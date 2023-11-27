@@ -17,5 +17,8 @@ namespace DAL.Model
         public DateTime NgayLap { get; set; }
 
         public string TrangThai { get; set; }
+
+        // Navigation property for the related ThongKeChiTiet
+        public virtual ICollection<ThongKeChiTiet> ThongKeChiTiets { get; set; }
     }
 }

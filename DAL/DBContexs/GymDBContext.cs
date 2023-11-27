@@ -38,6 +38,7 @@ namespace DAL.DBContexs
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            // Thêm các cấu hình quan hệ khác nếu cần
         }
     }
 }

@@ -12,23 +12,24 @@ namespace DAL.Model
     {
         [Key]
         public string IdHoadonchitiet {  get; set; }
-        [ForeignKey("IdHoadon")]
+        
         public string IdHoadon {  get; set; }
-        [ForeignKey("IdKhachhang")]
-        public string IdKhachhang {  get; set; }
+        [ForeignKey("IdHoadon")]
+        public virtual ICollection< Hoadon> Hoadon { get; set; }
         public double Gia {  get; set; }
-        [ForeignKey("IdGG")]
+        
         public string IdGG {  get; set; }
-
+        [ForeignKey("IdGG")]
+        public Giamgia Giamgia { get; set; }
         public float Giagiam { get; set; }
 
         public double Tiencoctruoc { get; set; }
 
         public double Tiencanthanhtoan { get; set; }
+        
+        public string IdDichvu { get; set; }
         [ForeignKey("IdDichvu")]
         public Dichvu Dichvu { get; set; }
-        public KhachHang KhachHang { get; set; }
-        public Giamgia Giamgia { get; set; }
-        public Hoadon Hoadon { get; set; }
+        
     }
 }

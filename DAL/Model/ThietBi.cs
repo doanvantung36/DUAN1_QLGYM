@@ -25,6 +25,9 @@ namespace DAL.Model
         public string TrangThai { get; set; }
 
         // Navigation property for the related LoaiThietBi
-        public LoaiThietBi LoaiThietBi { get; set; }
+        public virtual LoaiThietBi LoaiThietBi { get; set; }
+
+        // Navigation property for the related ThongKeChiTiet
+        public virtual ICollection<ThongKeChiTiet> ThongKeChiTiets { get; set; }
     }
 }

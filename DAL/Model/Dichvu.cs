@@ -14,8 +14,10 @@ namespace DAL.Model
         public string IdDichvu {  get; set; }
 
         public string Tendichvu { get; set; }
-
-        public int Gia {  get; set; }
+        public string IdHopDong { get; set; }
+        [ForeignKey("IdHopDong")]
+        public virtual ICollection< Hopdong> Hopdong { get; set; }
+        public double Gia {  get; set; }
         public DateTime Thoihan { get; set; }
 
         public string Ghichu {  get; set; }

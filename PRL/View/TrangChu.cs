@@ -108,7 +108,7 @@ namespace PRL.View
                 OpentChillForm(new NhanVien());
                 txtChucNang.Text = btn_HoiVien.Text;
                 SetButtonColor(btnNhanVien);
-            }  
+            }
         }
 
         private void btnKhuyenMai_Click(object sender, EventArgs e)
@@ -123,7 +123,7 @@ namespace PRL.View
                 txtChucNang.Text = btnKhuyenMai.Text;
                 SetButtonColor(btnKhuyenMai);
             }
-            
+
         }
 
         private void btnGiaoDich_Click(object sender, EventArgs e)
@@ -143,6 +143,11 @@ namespace PRL.View
         }
 
         private void TrangChu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
         {
             
         }

@@ -17,7 +17,7 @@ namespace PRL.View
     public partial class DangNhap : Form
     {
         private readonly UserService _userService;
-        public DangNhap(UserService userService)
+        public DangNhap(UserService userService, object userService1)
         {
             InitializeComponent();
             _userService = userService;
@@ -48,6 +48,11 @@ namespace PRL.View
             {
                 MessageBox.Show("Đăng nhập không thành công");
             }
+        }
+
+        private void DangNhap_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
